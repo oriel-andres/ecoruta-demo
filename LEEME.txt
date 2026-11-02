@@ -1,0 +1,20 @@
+05_Demo_Fetch · Semana 9 (tarde) · Desarrollo de Frontend (ICINF1107)
+
+Ficha de ruta "Cerro Ñielol" con un widget "Clima en la ruta" que pide datos a Open-Meteo.
+
+index.html + js/main.js ........ Para código en vivo. Bloques comentados 0 a 6, en el orden de la presentación 04.
+js/main_resuelto.js ............ Respaldo con todo activo (cambiar el src del script en index.html).
+datos/clima-respaldo.json ...... Plan B si la red de la sala falla: misma estructura que la respuesta real.
+                                 En main_resuelto.js basta con poner USAR_RESPALDO = true.
+
+CÓMO ABRIRLO
+- Con Live Server (VS Code: clic derecho en index.html → Open with Live Server).
+- Con doble clic (file://) la API funciona, pero el JSON de respaldo NO carga: el navegador bloquea
+  fetch a archivos locales. Es un error esperable en los equipos; vale la pena mostrarlo.
+
+ANTES DE LA CLASE
+- Abrir en el navegador, desde la red de la UCT, la URL de la API (está en main.js, constante URL_CLIMA)
+  y confirmar que responde.
+- Probar el modo sin conexión: DevTools → Network → Offline → recargar. Debe aparecer el mensaje de error.
+
+Las imágenes vienen de picsum.photos y requieren internet.

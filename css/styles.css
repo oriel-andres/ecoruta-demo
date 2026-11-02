@@ -1,0 +1,53 @@
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; font-family: system-ui, sans-serif; color: #1E2761; background: #F7F8FC; }
+header { background: #1E2761; color: #fff; padding: 1rem; }
+header h1 { margin: 0 0 .5rem; }
+nav a { color: #F9A826; margin-right: 1rem; }
+main { padding: 1rem; max-width: 1100px; margin: 0 auto; display: grid; gap: 1.25rem; }
+.aviso { background: #FFF3CD; padding: .75rem; border-radius: 6px; margin: 0; }
+
+.filtros { display: flex; flex-wrap: wrap; gap: 1rem; }
+.campo { display: grid; gap: .25rem; }
+label { font-weight: 600; }
+input, select, textarea { font: inherit; padding: .5rem; border: 2px solid #9AA3C7; border-radius: 6px; background: #fff; color: #1E2761; }
+input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid #F9A826; outline-offset: 1px; }
+
+.listado { display: grid; gap: 1rem; }
+@media (min-width: 768px) { .listado { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .listado { grid-template-columns: repeat(4, 1fr); } }
+.tarjeta { background: #fff; border: 1px solid #ccc; border-radius: 8px; padding: 16px; }
+.tarjeta img { width: 100%; height: auto; border-radius: 4px; background: #DDE1EE; }
+.tarjeta h2 { margin-top: 0; font-size: 1.25rem; }
+.tarjeta.destacada { border: 3px solid #F9A826; }
+.tarjeta.favorita { background: #FFF8E6; }
+
+button { font: inherit; background: #1E2761; color: #fff; border: 0; padding: .5rem 1rem; border-radius: 4px; cursor: pointer; }
+button:focus-visible { outline: 3px solid #F9A826; outline-offset: 2px; }
+.oculto { display: none; }
+
+.comentario { background: #fff; border: 1px solid #ccc; border-radius: 8px; padding: 16px; }
+.comentario h2 { margin-top: 0; }
+#form-comentario { display: grid; gap: .5rem; max-width: 560px; }
+#form-comentario button { justify-self: start; }
+.ayuda { margin: 0; color: #5A5A6E; font-size: .9rem; }
+.ayuda.casi { color: #A33A00; font-weight: 600; }
+.mensaje { margin: 0; min-height: 1.5em; font-weight: 600; }
+
+footer { text-align: center; padding: 1rem; font-size: .9rem; }
+
+/* ---------- Widget "Clima en la ruta" (Semana 9, tarde) ---------- */
+.ficha { background: #fff; border: 1px solid #ccc; border-radius: 8px; padding: 16px; display: grid; gap: .75rem; }
+@media (min-width: 768px) { .ficha { grid-template-columns: 1fr 320px; align-items: start; } }
+.ficha img { width: 100%; height: auto; border-radius: 6px; background: #DDE1EE; }
+.ficha h2 { margin: 0; }
+.clima { background: #1E2761; color: #fff; border-radius: 8px; padding: 16px; display: grid; gap: .5rem; }
+.clima h3 { margin: 0; color: #F9A826; font-size: 1.1rem; }
+.clima .estado { margin: 0; color: #CADCFC; }
+.clima .estado.error { color: #FFB4A8; font-weight: 600; }
+.clima .dato { margin: 0; font-size: 1.1rem; }
+.clima .dato strong { font-size: 1.8rem; }
+.clima .aviso-clima { margin: 0; background: #F9A826; color: #1E2761; font-weight: 700; padding: .4rem .6rem; border-radius: 4px; }
+.clima .fuente { margin: 0; font-size: .8rem; color: #CADCFC; }
+.clima .fuente a { color: #F9A826; }
+.clima button { justify-self: start; background: #F9A826; color: #1E2761; font-weight: 700; }

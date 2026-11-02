@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cerro Ñielol | EcoRuta Temuco</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>EcoRuta Temuco</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Rutas</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="ficha">
+      <div>
+        <h2>Cerro Ñielol</h2>
+        <img src="https://picsum.photos/seed/nielol/600/300" alt="Sendero entre árboles nativos del Cerro Ñielol">
+        <p>Monumento natural en plena ciudad. Senderos cortos entre bosque nativo, con miradores sobre Temuco. Dificultad baja.</p>
+      </div>
+
+      <!-- Widget: los datos NO están escritos aquí; los trae JavaScript desde la API -->
+      <section class="clima" aria-labelledby="titulo-clima">
+        <h3 id="titulo-clima">Clima en la ruta</h3>
+        <!-- aria-live: el lector de pantalla anuncia los cambios de estado -->
+        <p id="estado" class="estado" aria-live="polite">Aún no se ha pedido el clima.</p>
+        <p class="dato">Temperatura: <strong id="temperatura">--</strong></p>
+        <p class="dato">Viento: <strong id="viento">--</strong></p>
+        <p class="dato">Cielo: <strong id="cielo">--</strong></p>
+        <p id="aviso-clima" class="aviso-clima" hidden></p>
+        <button type="button" id="btn-actualizar">Actualizar clima</button>
+        <p class="fuente">Datos: <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a></p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>EcoRuta Temuco · Proyecto del curso Desarrollo de Frontend</p>
+  </footer>
+</body>
+</html>

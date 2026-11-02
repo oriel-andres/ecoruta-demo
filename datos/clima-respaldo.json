@@ -1,0 +1,23 @@
+{
+  "latitude": -38.75,
+  "longitude": -72.625,
+  "generationtime_ms": 0.05,
+  "utc_offset_seconds": -10800,
+  "timezone": "America/Santiago",
+  "timezone_abbreviation": "GMT-3",
+  "elevation": 118.0,
+  "current_units": {
+    "time": "iso8601",
+    "interval": "seconds",
+    "temperature_2m": "°C",
+    "wind_speed_10m": "km/h",
+    "weather_code": "wmo code"
+  },
+  "current": {
+    "time": "2026-11-02T15:00",
+    "interval": 900,
+    "temperature_2m": 7.4,
+    "wind_speed_10m": 18.0,
+    "weather_code": 61
+  }
+}
