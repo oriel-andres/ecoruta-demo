@@ -109,3 +109,6 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+.tarjeta img { width: 100%; max-width: 320px; border-radius: 8px; }
+.tarjeta { margin-bottom: 24px; }
