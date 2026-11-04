@@ -1,11 +1,17 @@
-export default function Encabezado() {
+export default function Encabezado({ enlaces, paginaActual }) {
   return (
     <header>
       <h1>EcoRuta Temuco</h1>
       <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Rutas</a>
-        <a href="#">Contacto</a>
+        {enlaces.map((enlace) => (
+          <a
+            key={enlace}
+            href="#"
+            className={enlace === paginaActual ? "activo" : ""}
+          >
+            {enlace}
+          </a>
+        ))}
       </nav>
     </header>
   );

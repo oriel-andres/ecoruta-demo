@@ -112,3 +112,6 @@ code {
 
 .tarjeta img { width: 100%; max-width: 320px; border-radius: 8px; }
 .tarjeta { margin-bottom: 24px; }
+
+nav { display: flex; gap: 16px;  }
+nav a.activo { font-weight: bold; text-decoration: underline; }

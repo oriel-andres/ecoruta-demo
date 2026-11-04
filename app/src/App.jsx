@@ -3,10 +3,14 @@ import Encabezado from "./components/Encabezado.jsx";
 import PiePagina from "./components/PiePagina.jsx";
 import nielol from "./assets/nielol.jpg";
 
+
 function App() {
   return (
     <>
-      <Encabezado />
+      <Encabezado
+        enlaces={["Inicio", "Rutas", "Contacto", "Emprendimientos"]}
+        paginaActual="Inicio"
+      />
       <main>
         <TarjetaRuta nombre="Cerro Ñielol" distanciaKm={4} dificultad="baja" imagen={nielol} alt="Sendero del Cerro Ñielol" />
         <TarjetaRuta nombre="Laguna Captrén" distanciaKm={2} dificultad="baja" imagen={nielol} alt="Laguna Captrén" />
@@ -16,5 +20,6 @@ function App() {
     </>
   );
 }
+
 
 export default App;

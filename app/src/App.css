@@ -182,3 +182,6 @@
     border-right-color: var(--border);
   }
 }
+
+nav { display: flex; gap: 16px; flex-direction: column; }
+nav a.activo { font-weight: bold; text-decoration: underline; }
