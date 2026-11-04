@@ -7,7 +7,8 @@ export default function Encabezado({ enlaces, paginaActual }) {
           <a
             key={enlace}
             href="#"
-            className={enlace === paginaActual ? "activo" : ""}
+            className={enlace === paginaActual ? "activo" : undefined}
+            aria-current={enlace === paginaActual ? "page" : undefined}
           >
             {enlace}
           </a>
