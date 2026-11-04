@@ -1,25 +1,21 @@
-import TarjetaRuta from "./components/TarjetaRuta.jsx";
 import Encabezado from "./components/Encabezado.jsx";
+import ListaRutas from "./components/ListaRutas.jsx";
 import PiePagina from "./components/PiePagina.jsx";
-import nielol from "./assets/nielol.jpg";
-
+import { rutas } from "./datos/rutas.js";
 
 function App() {
   return (
     <>
       <Encabezado
-        enlaces={["Inicio", "Rutas", "Contacto", "Emprendimientos"]}
+        enlaces={["Inicio", "Rutas", "Contacto"]}
         paginaActual="Inicio"
       />
       <main>
-        <TarjetaRuta nombre="Cerro Ñielol" distanciaKm={4} dificultad="baja" imagen={nielol} alt="Sendero del Cerro Ñielol" />
-        <TarjetaRuta nombre="Laguna Captrén" distanciaKm={2} dificultad="baja" imagen={nielol} alt="Laguna Captrén" />
-        <TarjetaRuta nombre="Sierra Nevada" distanciaKm={7} dificultad="alta" imagen={nielol} alt="Sierra Nevada" />
+        <ListaRutas rutas={rutas} />
       </main>
       <PiePagina />
     </>
   );
 }
-
 
 export default App;
